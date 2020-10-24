@@ -107,11 +107,11 @@ float3 furShade(float3 pos, float2 uv, float3 origin, float density, float time,
   float i = t * 0.5 + 0.5;
 
   // leopard
-  spec *= 0.5;
-  return color * diff * i + float3(spec * i, spec * i, 0);
+  //spec *= 0.5;
+  //return color * diff * i + float3(spec * i, spec * i, 0);
 
   // sully
-  // return color * diff * i + float3(0, spec * i, spec * i);
+  return color * diff * i + float3(0, spec * i, spec * i);
 }
 
 float4 environment(float3 ro,

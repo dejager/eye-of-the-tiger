@@ -68,7 +68,7 @@ extension ShaderRenderer: MTKViewDelegate {
     }
 
     let colorTexture: MTLTexture?
-    if let imageUrl = Bundle.main.url(forResource: "leopard", withExtension: "png") {
+    if let imageUrl = Bundle.main.url(forResource: "sully", withExtension: "png") {
       colorTexture = try? textureLoader?.newTexture(URL: imageUrl, options: nil)
     } else {
       colorTexture = nil
